@@ -1,5 +1,9 @@
 package ThirtyDaysOfCode;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class DayTwo {
     /*
      * Complete the 'solve' function below.
