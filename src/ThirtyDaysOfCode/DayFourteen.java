@@ -10,21 +10,22 @@ any 2 numbers in _elements and stores it in the maximumDifference instance varia
 
 public class DayFourteen {
     // Note: class instance and inputs not provided as per hackerrank
-    public Difference (int[] n) {
-        elements = n;
-    }
 
-    public void computeDifference() {
-        int min = elements[0];
-        int max = elements[0];
-        for(int i = 0; i < elements.length; i++) {
-            if(elements[i]<min) {
-                min=elements[i];
-            }
-            if(elements[i]>max) {
-                max=elements[i];
-            }
-        }
-        maximumDifference = Math.abs(max-min);
-    }
+//    public Difference (int[] n) {
+//        elements = n;
+//    }
+//
+//    public void computeDifference() {
+//        int min = elements[0];
+//        int max = elements[0];
+//        for(int i = 0; i < elements.length; i++) {
+//            if(elements[i]<min) {
+//                min=elements[i];
+//            }
+//            if(elements[i]>max) {
+//                max=elements[i];
+//            }
+//        }
+//        maximumDifference = Math.abs(max-min);
+//    }
 }
