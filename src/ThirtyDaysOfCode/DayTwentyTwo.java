@@ -8,15 +8,15 @@ import org.w3c.dom.Node;
 
 public class DayTwentyTwo {
 
-    public static int getHeight(Node root){
-        //Write your code here
-        if (root == null)
-            return -1;
-        else
-        {
-            int leftDepth = getHeight(root.left);
-            int rightDepth = getHeight(root.right);
-            return Math.max(leftDepth+1, rightDepth+1);
-        }
-    }
+//    public static int getHeight(Node root){
+//        //Write your code here
+//        if (root == null)
+//            return -1;
+//        else
+//        {
+//            int leftDepth = getHeight(root.left);
+//            int rightDepth = getHeight(root.right);
+//            return Math.max(leftDepth+1, rightDepth+1);
+//        }
+//    }
 }
