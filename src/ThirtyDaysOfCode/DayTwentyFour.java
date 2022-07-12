@@ -11,20 +11,20 @@ A removeDuplicates function is declared in your editor,
 */
 
 public class DayTwentyFour {
-    public static Node removeDuplicates(Node head) {
-        //Write your code here
-        if (head == null) {
-            return null;
-        }
-        Node temporary_node = head;
-        while(temporary_node.next != null) {
-            if(temporary_node.data != temporary_node.next.data) {
-                temporary_node = temporary_node.next;
-            }
-            else {
-                temporary_node.next = temporary_node.next.next;
-            }
-        }
-        return head;
-    }
+//    public static Node removeDuplicates(Node head) {
+//        //Write your code here
+//        if (head == null) {
+//            return null;
+//        }
+//        Node temporary_node = head;
+//        while(temporary_node.next != null) {
+//            if(temporary_node.data != temporary_node.next.data) {
+//                temporary_node = temporary_node.next;
+//            }
+//            else {
+//                temporary_node.next = temporary_node.next.next;
+//            }
+//        }
+//        return head;
+//    }
 }
