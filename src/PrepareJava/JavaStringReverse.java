@@ -7,11 +7,11 @@ import java.util.Scanner;
 
 public class JavaStringReverse {
     public static void checkPalindrome (String input) {
-        String n = "";
+        StringBuilder n = new StringBuilder();
         for (int i = input.length() - 1; i >= 0; i--) {
-            n = n + input.charAt(i);
+            n.append(input.charAt(i));
         }
-        if (input.equals(n)) {
+        if (input.equals(n.toString())) {
             System.out.println("Yes");
         }
         else {
