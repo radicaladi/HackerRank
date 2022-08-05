@@ -1,0 +1,20 @@
+'use strict';
+
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+    let re =  /^([aeiou]).*\1$/;
+
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+};
+
+^ asserts position at start of the string
+1st Capturing Group ([aeiou])
+.* matches any character (except newline) - between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+\1 matches the same text as most recently matched by the 1st capturing group
+$ asserts position at the end of the string
