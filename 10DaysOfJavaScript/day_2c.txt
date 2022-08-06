@@ -21,13 +21,22 @@ process.stdin.on('end', _ => {
 function readLine() {
     return inputString[currentLine++];
 }
+
 /*
- * Create the function factorial here
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
  */
-function factorial (n) {
-    let output = 1
-    for (let i = n; i >= 1; i--) {
-        output = output * i;
+
+let vowels = "aeiouAEIOU";
+let consonants = '';
+
+function vowelsAndConsonants(s) {
+    for (let i = 0; i < s.length; i++) {
+        if (vowels.includes(s[i])) {
+            console.log(s[i]);
+        } else {
+            consonants += s[i] + '\n'
+        }
     }
-    return output;
+    console.log(consonants.trim())
 }
