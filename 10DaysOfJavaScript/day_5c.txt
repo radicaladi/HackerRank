@@ -1,0 +1,35 @@
+The button's initial text label is 0. After each click, the button must increment by 1.
+Recall that the button's text label is the JS object's innerHTML property.
+
+CSS:
+#btn {
+    width: 96px;
+    height: 48px;
+    font-size: 24px;
+}
+
+JS:
+let btn = document.getElementById('btn');
+let counter;
+
+btn.addEventListener('click', ()=>{
+    counter = btn.innerHTML;
+    parseInt(counter);
+    counter++;
+    btn.innerHTML = counter;
+})
+
+HTML:
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+        <link rel="stylesheet" href="css/button.css">
+    </head>
+    <body>
+        <button id="btn">0</button>
+    </body>
+    <script src="js/button.js"></script>
+</html>
