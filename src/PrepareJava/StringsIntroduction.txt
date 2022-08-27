@@ -1,0 +1,27 @@
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+
+        System.out.println(A.length() + B.length());
+
+        System.out.println(A.compareTo(B)>0?"Yes":"No");
+
+        String a = "";
+        a = a+Character.toUpperCase(A.charAt(0));
+        for(int i = 1; i<A.length(); i++) {
+            a+= A.charAt(i);
+        }
+        String b = "";
+        b=b+Character.toUpperCase(B.charAt(0));
+        for(int i = 1; i<B.length(); i++) {
+            b+= B.charAt(i);
+        }
+
+        System.out.println(a + " " +b);
+
+    }
+}
